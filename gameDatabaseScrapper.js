@@ -25,6 +25,7 @@ function lookup() {
 	var url = "http://www.mobygames.com/game/" + console + "/" + game;
 	
 	//For testing to see the url
-	document.getElementById("list").innerHTML = url;
+	//document.getElementById("list").innerHTML = url;
 	
+	window.location.href = url;
 }
