@@ -14,15 +14,13 @@
 		</div>
 		<div class="searchForm">
 			<form>
-				Video Game: <br>
-				<input id="game" type="text">
+				<input id="game" type="text" placeholder="video game" pattern=".{1,}" required title="video game cannot be empty" />
 				<br>
-				Console: <br>
-				<input id="console" type="text">
+				<input id="console" type="text" placeholder="console" pattern=".{1,}" required title="console cannot be empty" />
 				<br>
 			</form>
 			
-			<button type="button" onclick="lookup()">Search</button>
+			<button type="button" onclick="lookup()">Add</button>
 		</div>
 		<div class="result">
 			<p id="list"></p>
