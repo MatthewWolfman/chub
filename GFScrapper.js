@@ -21,8 +21,6 @@ function lookup() {
 		console = "ps-vita";
 	}
 	
-	var uGame = game.replace(" ", "-");
-	
 	//mock up of URL
 	var url = "http://www.mobygames.com/game/" + console + "/" + game;
 	
