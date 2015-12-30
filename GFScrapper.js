@@ -4,9 +4,10 @@ function lookup() {
 	var tempGame = document.getElementById("game").value;
 	var tempConsole = document.getElementById("console").value;
 	
-	//Converts the game and console to lower case
+	//Converts the game to the proper format
 	var game = tempGame.toLowerCase();
-	var console = tempConsole.toLowerCase();
+	game = game.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');
+	game = game.replace(/ /g, "-");
 	
 	/*
 	For temporary testing purposes only 
@@ -14,13 +15,16 @@ function lookup() {
 	To change the console to the condtion for the url. 
 	For gamefaqs.com they use vita istead of psvita
 	*/
+	var console = tempConsole.toLowerCase();
 	if(console === "psvita")
 	{
-		console = "vita";
+		console = "ps-vita";
 	}
 	
+	var uGame = game.replace(" ", "-");
+	
 	//mock up of URL
-	var url = "www.gamefaqs.com/" + console;
+	var url = "http://www.mobygames.com/game/" + console + "/" + game;
 	
 	//For testing to see the url
 	document.getElementById("list").innerHTML = url;
