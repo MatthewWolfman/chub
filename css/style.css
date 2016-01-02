@@ -12,7 +12,9 @@ body {
     width:100%;
 }
 
-.logo { padding:40px 0 0 40px;}
+.logo {
+	padding:40px 0 0 40px;
+}
 
 .searchForm {
 	background-color:#ffffff;
@@ -53,10 +55,6 @@ li a {
 li a.active {
     background-color: #808080;
     color: white;
-}
-
-li a:hover {
-    background-color: #111;
 }
 
 li a:hover:not(.active) {

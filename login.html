@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Game Lookup</title>
-		<script src="gameDatabaseScrapper.js" type="text/javascript"></script>
+		<title>Login</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	</head>
 	
@@ -15,15 +14,15 @@
 		
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a class="active" href="gameDatabase.html">Add Game</a></li>
-			<li><a href="login.html">Log In</a></li>
+			<li><a href="gameDatabase.html">Add Game</a></li>
+			<li><a class="active" href="login.html">Log In</a></li>
 		</ul>
 		
 		<div class="searchForm">
 			<form>
-				<input id="game" type="text" placeholder="video game" pattern=".{1,}" required title="video game cannot be empty" />
+				<input id="game" type="text" placeholder="Username" pattern=".{1,}" required title="video game cannot be empty" />
 				<br>
-				<input id="console" type="text" placeholder="console" pattern=".{1,}" required title="console cannot be empty" />
+				<input id="console" type="password" placeholder="Password" pattern=".{1,}" required title="console cannot be empty" />
 				<br>
 			</form>
 			
