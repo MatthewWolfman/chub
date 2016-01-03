@@ -1,9 +1,10 @@
 function loadDoc() {
-	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", "reel/01032016.txt", true);
-	xhttp.onreadystatechange = function() {
-		if (xhttp.readyState == 4 && xhttp.status == 200) {
-		  document.getElementById("txt").innerHTML = xhttp.responseText;
-		}
-	}
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "reel/test.txt", true);
+  xhttp.send();
 }
