@@ -1,6 +1,6 @@
 body {
   font-family:'Helvetica', 'Arial', sans-serif;
-  background-color:#eee;
+  background-color:#eeeeee;
   margin:0;
   padding:0;
 }
@@ -29,7 +29,24 @@ body {
     top:0;
     left:0;
     width:100%;
-	padding:40px 0 0 40px;
+	padding:40px;
+}
+
+.loginForm {
+	width: 175px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 0;
+	float:left;
+}
+
+.loginReel{
+	width: 400px;
+	height:100px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 0;
+	float:right;
 }
 
 ul {
@@ -61,3 +78,4 @@ li a:hover:not(.active) {
     background-color: white;
     color: black;
 }
+
