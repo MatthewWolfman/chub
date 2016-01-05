@@ -34,7 +34,7 @@ body {
 
 .loginForm {
 	width: 175px;
-    padding: 20px;
+    padding: 25px;
     border: 2px solid gray;
     margin: 5px;
 	float:left;
@@ -46,6 +46,12 @@ body {
     padding: 5px;
     margin: 0;
 	float:left;
+}
+
+.pass {
+	text-align: center;
+	color: red;
+	font-size:11px;
 }
 
 table#loginReel {
