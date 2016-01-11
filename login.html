@@ -21,26 +21,23 @@
 	<body>
 		
 		<div class="header">
-		<div class="logo">
-			<img src="pictures/logo.png" alt="Logo"/>
+			<div class="logo">
+				<img src="pictures/logo.png" alt="Logo"/>
+			</div>
 		</div>
-	</div>
-		
 		<div class="loginForm">
-			<form>
-				<input id="user" type="text" placeholder="Username" pattern=".{1,}" required title="video game cannot be empty" />
+			<form action="checkUser.php" method="post">
+				<input name="user" type="text" placeholder="Username" pattern=".{1,}" required title="Username cannot be empty" />
 				<br>
-				<input id="pass" type="password" placeholder="Password" pattern=".{1,}" required title="console cannot be empty" />
+				<input name="pass" type="password" placeholder="Password" pattern=".{1,}" required title="Password cannot be empty" />
 				<br>
+				<input class="button" type="submit" value="Submit" />
 			</form>
 
-			<button type="button" onclick="success()">Login</button>
-			
 			<div class="pass">
 				<p id="wrongPass"></p>
 			</div>
 		</div>
-		
 		<div class="loginReel">
 			<table id="loginReel">
 				<tr>
