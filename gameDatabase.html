@@ -33,14 +33,139 @@
 		</ul>
 		
 		<div class="searchForm">
-			<form>
-				<input id="game" type="text" placeholder="video game" pattern=".{1,}" required title="video game cannot be empty" />
+			<form action="gameLookup.php" method="post">
+				<input name="game" type="text" placeholder="video game" pattern=".{1,}" required title="video game cannot be empty" />
 				<br>
-				<input id="console" type="text" placeholder="console" pattern=".{1,}" required title="console cannot be empty" />
+				<input name="console" type="text" placeholder="console" pattern=".{1,}" required title="console cannot be empty" />
 				<br>
+				<input class="button" type="submit" value="Add" />
+	
+	
 			</form>
-			
-			<button type="button" onclick="lookup()">Add</button>
+		</div>
+		
+		<div class="loginReel">
+			<table id="loginReel">
+				<tr>
+					<th>Sony Consoles</th>
+					<th>Input Value</th>
+				<tr>
+					<td>PS Vita</td>
+					<td>vita</td>
+				</tr>
+				<tr>
+					<td>PSP</td>
+					<td>psp</td>
+				</tr>
+				<tr>
+					<td>Playstation</td>
+					<td>ps</td>
+				</tr>
+				<tr>
+					<td>Playstation 2</td>
+					<td>ps2</td>
+				</tr>
+				<tr>
+					<td>Playstation 3</td>
+					<td>ps3</td>
+				</tr>
+				<tr>
+					<td>Playstation 4</td>
+					<td>ps4</td>
+				</tr>
+			</table>
+		</div>
+		<div class="loginReel">
+			<table id="loginReel">
+				<tr>
+					<th>Nintendo Consoles</th>
+					<th>Input Value</th>
+				<tr>
+				<tr>
+					<td>NES</td>
+					<td>nes</td>
+				</tr>
+				<tr>
+					<td>Super Nintendo</td>
+					<td>snes</td>
+				</tr>
+				<tr>
+					<td>Nintendo 64</td>
+					<td>n64</td>
+				</tr>
+				<tr>
+					<td>GameCube</td>
+					<td>gamecube</td>
+				</tr>
+				<tr>
+					<td>Wii</td>
+					<td>wii</td>
+				</tr>
+				<tr>
+					<td>Wii U</td>
+					<td>wii-u</td>
+				</tr>
+				<tr>
+					<td>Game Boy</td>
+					<td>gameboy</td>
+				</tr>
+				<tr>
+					<td>Game Boy Color</td>
+					<td>gbc</td>
+				</tr>
+				<tr>
+					<td>Nintendo DS</td>
+					<td>ds</td>
+				</tr>
+				<tr>
+					<td>Nintendo 3DS</td>
+					<td>3ds</td>
+				</tr>
+			</table>
+		</div>
+		<div class="loginReel">
+			<table id="loginReel">
+				<tr>
+					<th>Microsoft Consoles</th>
+					<th>Input Value</th>
+				<tr>
+				<tr>
+					<td>Xbox</td>
+					<td>xbox</td>
+				</tr>
+				<tr>
+					<td>Xbox 360</td>
+					<td>xbox360</td>
+				</tr>
+				<tr>
+					<td>Xbox One</td>
+					<td>xboxone</td>
+				</tr>
+			</table>
+		</div>
+		<div class="loginReel">
+			<table id="loginReel">
+				<tr>
+					<th>Sega Consoles</th>
+					<th>Input Value</th>
+				<tr>
+				<tr>
+					<td>Sega Master System</td>
+					<td>sms</td>
+				</tr>
+				<tr>
+					<td>Sega Genesis</td>
+					<td>genesis</td>
+				</tr>
+				<tr>
+					<td>Sega Saturn</td>
+					<td>saturn</td>
+				</tr>
+				<tr>
+					<td>Sega Dreamcast</td>
+					<td>dreamcast</td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>
