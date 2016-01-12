@@ -20,7 +20,10 @@
 		}
 		
 		if(empty($row)){
-			echo "Wrong user name or password!";
+			echo '<script language="javascript">';
+			echo 'alert("Wrong Username and/or Password!");';
+			echo 'history.back();';
+			echo '</script>';
 		} else {
 			$_SESSION["user"] = $row["user"]["username"];
 			header('Location: index.html');
